@@ -8,6 +8,7 @@ from django.contrib import messages
 from Restaurant_sns import RestaurantSNS
 from botocore.exceptions import ClientError
 import logging
+from table_token_generater_x21174105 import token
 
 #from publisher import Publisher
 
@@ -50,8 +51,8 @@ def reservations(request):
         reservations = table(name=name, email=email,date=date,time=time,phone=phone,message=message,people=people)
 
         reservations.save()
-        
-        a_publisher.send_SMS_message(phone, "Your product has been added ")
+        message = "Your table is book and ReservationID #" + token.createtoken()
+        a_publisher.send_SMS_message(phone,message)
 
     return render(request, 'reservations.html')
 
