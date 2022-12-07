@@ -23,3 +23,4 @@ six==1.16.0
 social-auth-app-django==5.0.0
 social-auth-core==4.3.0
 urllib3==1.26.13
+table_token_generater_x21174105==0.0.1
