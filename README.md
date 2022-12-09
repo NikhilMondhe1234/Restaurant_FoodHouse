@@ -1,5 +1,4 @@
 # Food house restaurant Management System
-A restaurant management system using django: http://anujmaddy.pythonanywhere.com/
 
 Here is a real life application build with django, bootstrap-4
 
@@ -34,9 +33,3 @@ Cheers!
  
 ### You can Book a table here.
 ![Screenshot](screenshot/Bookatable.png)  
-  
- 
-
-
-
-## If you found this usefull don't forget to hit a star :) 
